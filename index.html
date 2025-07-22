@@ -211,9 +211,12 @@
 </section>
 
   <section id="contact">
-    <h2>Контакт</h2>
-    <p>Може да ми пишете директно чрез тази форма:</p>
-    <form onsubmit="event.preventDefault(); alert('Благодарим! Ще се свържем с вас скоро.');">
-      <input type="text" name="name" placeholder="Вашето име" required />
-      <input type="email" name="email" placeholder="Имейл" required />
-      <textarea name="message" rows="4" placeholder="Съобщение" required></textarea>
+  <h2>Контакт</h2>
+  <p>Може да ми пишете директно чрез тази форма:</p>
+  <form action="https://formspree.io/f/xkgzoapw" method="POST">
+    <input type="text" name="name" placeholder="Вашето име" required />
+    <input type="email" name="email" placeholder="Имейл" required />
+    <textarea name="message" rows="4" placeholder="Съобщение" required></textarea>
+    <button type="submit">Изпрати</button>
+  </form>
+</section>
