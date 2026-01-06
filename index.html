@@ -144,6 +144,24 @@
       }
     }
   </style>
+    .therapy-list {
+  list-style: none;      /* махаме стандартните булети */
+  padding-left: 0;
+  margin: 16px 0 8px;
+}
+
+.therapy-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #4a3f36;
+}
+
+/* нежна точка, почти като дишане */
+.therapy-list li::before {
+  content: "•";
+  color: #c28a5c;        /* топъл, мек цвят */
+  margin-right: 10px;
+}
 </head>
 <body>
   <header>
