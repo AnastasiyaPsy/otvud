@@ -183,6 +183,16 @@
   .teen-buttons{ flex-direction: column; }
   .teen-buttons a{ width: 100%; text-align: center; }
 }
+/* FORCE: винаги показвай бутона "Прочети статията" */
+.teen-buttons a,
+a.btn-read {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 999 !important;
+}
+
   </style>
   
 </head>
@@ -307,10 +317,11 @@
     Предлагам първа безплатна консултация,
     в която да обсъдим каква подкрепа би била най-подходяща.
   </p>
-   <div class="teen-buttons">
+ <div class="teen-buttons">
   <a href="kogato-ekranite-stanat-po-vajni.html" class="btn-read">Прочети статията</a>
   <a href="#contact" class="btn-primary">Свържи се с мен</a>
 </div>
+
 </section>
 
 
