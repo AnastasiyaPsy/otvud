@@ -173,7 +173,16 @@
   color: #3f342c; /* по-тъмен, но мек кафяв */
   font-weight: 600;
 }
-
+.teen-buttons{
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px){
+  .teen-buttons{ flex-direction: column; }
+  .teen-buttons a{ width: 100%; text-align: center; }
+}
   </style>
   
 </head>
@@ -298,11 +307,10 @@
     Предлагам първа безплатна консултация,
     в която да обсъдим каква подкрепа би била най-подходяща.
   </p>
-    <a href="kogato-ekranite-stanat-po-vajni.html" class="btn-read">
-  Прочети статията
-</a>
-
+   <div class="teen-buttons">
+  <a href="kogato-ekranite-stanat-po-vajni.html" class="btn-read">Прочети статията</a>
   <a href="#contact" class="btn-primary">Свържи се с мен</a>
+</div>
 </section>
 
 
